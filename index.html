@@ -24,36 +24,36 @@
     <!-- Diseño de la calculadora -->
     <div class="container">
         <form action="#" name="forms">
-            <input type="text" name="answer" value="">
+            <input type="text" name="answer" onfocus="quitar()" value="">
             <div class="buttons">
-                <input type="button" value="AC">
-                <input type="button" value="DEL">
-                <input type="button" value="%">
-                <input type="button" value="/">
+                <input type="button" onclick="borrarUno()" value="AC">
+                <input type="button" onclick="borrar()" value="DEL">
+                <input type="button" onclick="operador('%')" value="MOD">
+                <input type="button" onclick="operador(this.value)" value="/">
             </div>
             <div class="buttons">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="*">
+                <input type="button" onclick="numeros(this.value)" value="7">
+                <input type="button" onclick="numeros(this.value)" value="8">
+                <input type="button" onclick="numeros(this.value)" value="9">
+                <input type="button" onclick="operador(this.value)" value="*">
             </div>
             <div class="buttons">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
+                <input type="button" onclick="numeros(this.value)" value="4">
+                <input type="button" onclick="numeros(this.value)" value="5">
+                <input type="button" onclick="numeros(this.value)" value="6">
+                <input type="button" onclick="operador(this.value)" value="-">
             </div>
             <div class="buttons">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
+                <input type="button" onclick="numeros(this.value)" value="1">
+                <input type="button" onclick="numeros(this.value)" value="2">
+                <input type="button" onclick="numeros(this.value)" value="3">
+                <input type="button" onclick="operador(this.value)" value="+">
             </div>
             <div class="buttons">
-                <input type="button" value="0">
-                <input type="button" value="00">
-                <input type="button" value=".">
-                <input type="button" value="=">
+                <input type="button" onclick="numeros(this.value)" value="0">
+                <input type="button" onclick="numeros(this.value)" value="00">
+                <input type="button" onclick="numeros(this.value)" value=".">
+                <input type="button" onclick="calcular()" value="=">
             </div>
         </form>
     </div>
